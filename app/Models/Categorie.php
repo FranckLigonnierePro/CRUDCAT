@@ -9,10 +9,8 @@ class Categorie extends Model
 {
     use HasFactory;
     protected $fillable = [
-        'titre',
-        'image',
-        'description',
-        'categorie_id'
+        'id',
+        'categorie'
     ];
 
     public function films()

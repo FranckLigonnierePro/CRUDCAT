@@ -15,7 +15,7 @@ class CreateFilmsTable extends Migration
     {
         Schema::create('films', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('categorie_id')->default(1)->constrained();
+            $table->foreignId('categorie_id')->constrained();
             $table->string('titre');
             $table->string('description');
             $table->string('image');
